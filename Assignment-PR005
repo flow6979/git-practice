@@ -1,0 +1,42 @@
+Questions:
+Create an application and integrate sentry with it. Push error messages to the sentry
+	
+	Steps - 
+Create sentry account
+Install sentry sdk and import it.
+			
+pip install sentry-sdk
+
+Configure sentry using dsn string.
+			
+		import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+sentry_sdk.init(
+    dsn="your-dsn-here", 
+    integrations=[DjangoIntegration()],
+)
+
+
+Send error or exception message to sentry ( with try and exception blocks in python.
+		Try:
+    raise ValueError("This is a demo error.")
+except Exception as e:
+    sentry_sdk.capture_exception(e)
+
+
+
+
+Mention commands for updating a staging with a particular branch for a service
+
+	practl update st <stage_name> -p <branch_name>
+
+Command for starting a staging
+
+	practl start staging <staging_name>
+
+
+Create a staging with the services: Accounts, nav, Communicator, Ray-app, Ray-api, QMS, Store
+The deployment of one product will fail, explain why the deployment has failed
+
+	NOT ACCESSIBLE
