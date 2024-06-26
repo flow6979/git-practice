@@ -15,23 +15,23 @@
 	import sentry_sdk
 
 	sentry_sdk.init(
-		</br>
+		
 	    dsn="https://00d278f2aaf1ad3d51d13be34ca48e60@o4507496686878720.ingest.us.sentry.io/4507496689303552",
-		</br>
+		
 	    # Set traces_sample_rate to 1.0 to capture 100%
-		</br>
+		
 	    # of transactions for performance monitoring.
-		</br>
+		
 	    traces_sample_rate=1.0,
-		</br>
+		
 	    # Set profiles_sample_rate to 1.0 to profile 100%
-		</br>
+		
 	    # of sampled transactions.
-		</br>
+		
 	    # We recommend adjusting this value in production.
-		</br>
+		
 	    profiles_sample_rate=1.0,
-		</br>
+		
 	)
 
 
